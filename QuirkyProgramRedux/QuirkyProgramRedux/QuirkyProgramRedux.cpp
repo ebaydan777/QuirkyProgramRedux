@@ -51,7 +51,7 @@
 #include <iostream>		//Required for cin and cout
 #include <string>		//Required for string variables
 #include <windows.h>	//Required for Handle, BACKGROUND_ &
-						//FOREGROUND_ consts, SetConsoleTextAttribute	
+//FOREGROUND_ consts, SetConsoleTextAttribute	
 #include <mmstream.h>	//Required for PlaySound Feature
 
 #pragma comment(lib, "winmm.lib")	
@@ -61,7 +61,7 @@ using namespace std;	//Standard Naming Conventions
 
 
 
-//FUNCTIONS : EDIT THIS!
+						//FUNCTIONS : EDIT THIS!
 
 void welcome();
 //This is a void function with no parameters
@@ -123,6 +123,9 @@ void alexsQuirksIntro();
 void alexsQuirks1();
 //This is a void function with no parameters
 
+void alexsQuirks2();
+//This is a void function with no parameters
+
 void georgesQuirksIntro();
 //This is a void function with no parameters
 
@@ -135,57 +138,56 @@ void georgesQuirks2();
 void ericsQuirksIntro();
 //This is a void function with no parameters
 
-void georgesQuirks1();
+void ericsQuirks1();
 //This is a void function with no parameters
 
-void georgesQuirks2();
+void ericsQuirks2();
 //This is a void function with no parameters
 
 void farewell();
 //This is a void function with no parameters
 
 
-int main()
-
-{
-
 ///////////////////////////////////////////////////////////////////////////
 //				CONSTANTS DECLARATIONS AND DEFINITIONS					 //
 //																		 //	
-	const char		MY_NAME[] = "DANIEL MARIS";		//MY Name			 //
-//																		 //
-//																		 //
-///////////////////////////////////////////////////////////////////////////
+const char		MY_NAME[] = "DANIEL MARIS";		//MY Name			 //
+												//																		 //
+												//																		 //
+												///////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////
-//				   	  LOCAL VARIABLE DECLARATIONS						 //
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //
-	string userName;				//Login Name Defined				 //
-//																		 //
-///////////////////////////////////////////////////////////////////////////
+												///////////////////////////////////////////////////////////////////////////
+												//				   	  LOCAL VARIABLE DECLARATIONS						 //
+												//																		 //
+												//		Using HANDLE with predefined RGB colors							 //
+HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
+																	 //
+string userName;				//Login Name Defined				 //
+								//																		 //
+								///////////////////////////////////////////////////////////////////////////
 
-///////////////////////////////////////////////////////////////////////////
-//				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
-//																		 //
-//	A)	Red-Green-Blue Color Codings, known as RGB colors,				 // 
-//		are used in computer displays. Here:							 //
-//																		 //
-//		red = 4				red = 64									 //
-//		green = 2			green = 32									 //
-//		blue = 1			blue = 16									 //
-//																		 //
-//		for text colors		for background colors	                     //
-//																		 //
-//	B)	__TIMESTAMP__ uses the macro built into VS to display			 //
-//		current time and date!											 //
-//																		 //	
-///////////////////////////////////////////////////////////////////////////
+int main()
+{
+
+	///////////////////////////////////////////////////////////////////////////
+	//				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
+	//																		 //
+	//	A)	Red-Green-Blue Color Codings, known as RGB colors,				 // 
+	//		are used in computer displays. Here:							 //
+	//																		 //
+	//		red = 4				red = 64									 //
+	//		green = 2			green = 32									 //
+	//		blue = 1			blue = 16									 //
+	//																		 //
+	//		for text colors		for background colors	                     //
+	//																		 //
+	//	B)	__TIMESTAMP__ uses the macro built into VS to display			 //
+	//		current time and date!											 //
+	//																		 //	
+	///////////////////////////////////////////////////////////////////////////
 
 
-//PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
+	//PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
 	welcome();
 
@@ -199,9 +201,9 @@ int main()
 
 	hitEnter2();
 
-	danielsQuirks1()
+	danielsQuirks1();
 
-		hitEnter2();
+	hitEnter2();
 
 	danielsQuirks2();
 
@@ -289,7 +291,7 @@ int main()
 }
 
 //WELCOME MESSAGE																//#1
-void welcome();
+void welcome()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\n\n\n\t\t\t WELCOME TO ";        //Set color attribute to # 12 color RED + INTENSITY
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << MY_NAME;							   //Set color attribute to # 11 color CYAN + INTENSITY 
@@ -299,7 +301,7 @@ void welcome();
 
 //HIT ENTER MESSAGE	1															//#2
 
-void hitEnter1();
+void hitEnter1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 11);
 	cout << "\n\n\t\t\t\t\311\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\315\273";
@@ -315,7 +317,7 @@ void hitEnter1();
 }
 
 //DANIEL'S LOGO of an Aircraft with D and M initals on the tail					//#3
-void danielsLogo();
+void danielsLogo()
 {
 	cout << "\n\n"
 		<< "      \043\043\043\043\n"
@@ -443,7 +445,7 @@ cin.ignore();
 
 //DANIEL'S QUIRK INTRO MESSAGE													//#8
 
-void danielsQuirksIntro();
+void danielsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -469,7 +471,7 @@ void danielsQuirksIntro();
 
 //HIT ENTER MESSAGE #4															//#10
 
-void hitEnter2();
+void hitEnter2()
 {
 	cout << "\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
@@ -488,9 +490,22 @@ void hitEnter2();
 	system("cls");
 }
 
+void danielsQuirks1()
+{
+	cout << "TODO: CHANGE THIS BACK TO THE FIRST QUIRK-===================================================================================================";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << "\n\n\n\tDaniel's ";
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "Second Odd Quirk is:";
+	SetConsoleTextAttribute(consoleHANDLE, 11);
+	cout << "\n\n\n Another quirk is that I enjoy ranch with pretty much most foods especially chicken and pizza.\n"
+		" I tend to actually rate a restaurant on good its ranch is.\n"
+		" I probably wouldn’t go back again if it was bad.\n\n\n";
+	hitEnter2();
+	return;
+}
+
 //DANIEL'S QUIRK #2																//#11
 
-void danielsQuirks2();
+void danielsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << "\n\n\n\tDaniel's ";
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "Second Odd Quirk is:";
@@ -504,7 +519,7 @@ void danielsQuirks2();
 
 //1ST PARTNER QUIRK	- JP'S INTRO												//#13
 
-void jpsQuirksIntro();
+void jpsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -529,7 +544,7 @@ void jpsQuirksIntro();
 }
 
 //1ST PARTNER QUIRK #1	- JP's Quirks											//#14
-void jpsQuirks1();
+void jpsQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -546,7 +561,7 @@ void jpsQuirks1();
 
 //1ST PARTNER QUIRK #2	- JP's Quirks											//#16
 
-void jpsQuirks2();
+void jpsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -562,7 +577,7 @@ void jpsQuirks2();
 
 //2ND PARTNER QUIRK	- TODD'S INTRO												//#18
 
-void toddsQuirksIntro();
+void toddsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -588,7 +603,7 @@ void toddsQuirksIntro();
 
 //2ND PARTNER'S QUIRK #1	- Todd's Quirks										//#19
 
-void toddsQuirks1();
+void toddsQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -604,7 +619,7 @@ void toddsQuirks1();
 
 //2ND PARTNER QUIRK #2		- Todd's Quirks										//#21
 
-void toddsQuirks2();
+void toddsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -620,7 +635,7 @@ void toddsQuirks2();
 
 //3RD PARTNER QUIRK	- ALLISON'S INTRO											//#23
 
-void allisonsQuirksIntro();
+void allisonsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -646,7 +661,7 @@ void allisonsQuirksIntro();
 
 //3RD PARTNER QUIRK #1		- Allison's Quirks									//#24
 
-void allisonsQuirks1();
+void allisonsQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -662,7 +677,7 @@ void allisonsQuirks1();
 
 //3RD PARTNER QUIRK #2		- Allison's Quirks									//#26
 
-void allisonsQuirks2();
+void allisonsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -679,7 +694,7 @@ void allisonsQuirks2();
 
 // 4TH PARTNER QUIRK - ALEX'S INTRO												//#28
 
-void alexsQuirksIntro();
+void alexsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -705,7 +720,7 @@ void alexsQuirksIntro();
 
 //4TH PARTNER QUIRK #1		- Alex's Quirks										//#29
 
-void alexsQuirks1();
+void alexsQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -721,7 +736,7 @@ void alexsQuirks1();
 
 //4TH PARTNER QUIRK #2		- Alex's Quirks										/#31
 
-void alexsQuirks2();
+void alexsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -738,7 +753,7 @@ void alexsQuirks2();
 
 //5TH PARTNER QUIRK	- GEORGE'S INTRO											//#33
 
-void georgesQuirksIntro();
+void georgesQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -764,7 +779,7 @@ void georgesQuirksIntro();
 
 //5TH PARTNER QUIRK #1		- George's Quirks									//#34
 
-void georgesQuirks1();
+void georgesQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -780,7 +795,7 @@ void georgesQuirks1();
 
 //5TH PARTNER QUIRK #2		- George's Quirks									//#36
 
-void georgesQuirks2();
+void georgesQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -796,7 +811,7 @@ void georgesQuirks2();
 
 //6TH PARTNER QUIRK - ERIC'S INTRO												//#38
 
-void ericsQuirksIntro();
+void ericsQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
@@ -822,7 +837,7 @@ void ericsQuirksIntro();
 
 //6TH PARTNER QUIRK #1		Eric's Quirks										//#39
 
-void ericsQuirks1();
+void ericsQuirks1()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -838,7 +853,7 @@ void ericsQuirks1();
 
 //6TH PARTNER QUIRK #2		- Eric's Quirks										//#41
 
-void ericsQuirks2();
+void ericsQuirks2()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -861,7 +876,7 @@ void ericsQuirks2();
 
 //FAREWELL ENDING MESSAGE														//#45
 
-void farewell();
+void farewell()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\n\t\t              Thank You ";
