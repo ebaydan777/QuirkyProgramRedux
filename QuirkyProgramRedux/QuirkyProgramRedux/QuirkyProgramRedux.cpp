@@ -75,6 +75,9 @@ void hitEnter2();
 void hitEnter3();
 //This is a void function with no parameters
 
+void hitEnter4();
+//This is a void function with no parameters
+
 void danielsLogo();
 //This is a void function with no parameters
 
