@@ -72,6 +72,9 @@ void hitEnter1();
 void hitEnter2();
 //This is a void function with no parameters
 
+void hitEnter3();
+//This is a void function with no parameters
+
 void danielsLogo();
 //This is a void function with no parameters
 
@@ -152,42 +155,42 @@ void farewell();
 //				CONSTANTS DECLARATIONS AND DEFINITIONS					 //
 //																		 //	
 const char		MY_NAME[] = "DANIEL MARIS";		//MY Name			 //
-												//																		 //
-												//																		 //
-												///////////////////////////////////////////////////////////////////////////
+//																		 //
+//																		 //
+///////////////////////////////////////////////////////////////////////////
 
-												///////////////////////////////////////////////////////////////////////////
-												//				   	  LOCAL VARIABLE DECLARATIONS						 //
-												//																		 //
-												//		Using HANDLE with predefined RGB colors							 //
-HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																	 //
-string userName;				//Login Name Defined				 //
-								//																		 //
-								///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+//				   	  LOCAL VARIABLE DECLARATIONS						 //
+//																		 //
+//		Using HANDLE with predefined RGB colors							 //
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
+																		 //
+	string userName;				//Login Name Defined				 //
+//																		 //
+///////////////////////////////////////////////////////////////////////////
 
 int main()
 {
 
-	///////////////////////////////////////////////////////////////////////////
-	//				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
-	//																		 //
-	//	A)	Red-Green-Blue Color Codings, known as RGB colors,				 // 
-	//		are used in computer displays. Here:							 //
-	//																		 //
-	//		red = 4				red = 64									 //
-	//		green = 2			green = 32									 //
-	//		blue = 1			blue = 16									 //
-	//																		 //
-	//		for text colors		for background colors	                     //
-	//																		 //
-	//	B)	__TIMESTAMP__ uses the macro built into VS to display			 //
-	//		current time and date!											 //
-	//																		 //	
-	///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+//				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
+//																		 //
+//	A)	Red-Green-Blue Color Codings, known as RGB colors,				 // 
+//		are used in computer displays. Here:							 //
+//																		 //
+//		red = 4				red = 64									 //
+//		green = 2			green = 32									 //
+//		blue = 1			blue = 16									 //
+//																		 //
+//		for text colors		for background colors	                     //
+//																		 //
+//	B)	__TIMESTAMP__ uses the macro built into VS to display			 //
+//		current time and date!											 //
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
 
 
-	//PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
+PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
 	welcome();
 
@@ -195,95 +198,49 @@ int main()
 
 	danielsLogo();
 
-	hitEnter1();
-
 	danielsQuirksIntro();
-
-	hitEnter2();
 
 	danielsQuirks1();
 
-	hitEnter2();
-
 	danielsQuirks2();
-
-	hitEnter2();
 
 	jpsQuirksIntro();
 
-	hitEnter2();
-
 	jpsQuirks1();
-
-	hitEnter2();
 
 	jpsQuirks2();
 
-	hitEnter2();
-
 	toddsQuirksIntro();
-
-	hitEnter2();
 
 	toddsQuirks1();
 
-	hitEnter2();
-
 	toddsQuirks2();
-
-	hitEnter2();
 
 	allisonsQuirksIntro();
 
-	hitEnter2();
-
 	allisonsQuirks1();
-
-	hitEnter2();
 
 	allisonsQuirks2();
 
-	hitEnter2();
-
 	alexsQuirksIntro();
-
-	hitEnter2();
 
 	alexsQuirks1();
 
-	hitEnter2();
-
 	alexsQuirks2();
-
-	hitEnter2();
 
 	georgesQuirksIntro();
 
-	hitEnter2();
-
 	georgesQuirks1();
-
-	hitEnter2();
 
 	georgesQuirks2();
 
-	hitEnter2();
-
 	ericsQuirksIntro();
-
-	hitEnter2();
 
 	ericsQuirks1();
 
-	hitEnter2();
-
 	ericsQuirks2();
 
-	hitEnter2();
-
 	danielsLogo();
-
-	hitEnter1();
 
 	farewell();
 	return 0;
@@ -319,7 +276,8 @@ void hitEnter1()
 //DANIEL'S LOGO of an Aircraft with D and M initals on the tail					//#3
 void danielsLogo()
 {
-	cout << "\n\n"
+		SetConsoleTextAttribute(consoleHANDLE, 11);
+		cout << "\n\n"
 		<< "      \043\043\043\043\n"
 		<< "      \043\043\043\043\043\n"
 		<< "      \043\043\043\043\043\043\n"
@@ -473,7 +431,45 @@ void danielsQuirksIntro()
 
 void hitEnter2()
 {
-	cout << "\n\n\t\t\t\t";
+	cout << "\n\n\n\n\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HIT ENTER TO CONTINUE!";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336\n";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "      \333\333\333\333\333             ";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
+	SetConsoleTextAttribute(consoleHANDLE, 12);
+	cin.ignore();
+	system("cls");
+}
+
+void hitEnter3()
+{
+	cout << "\n\n\n\n\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HIT ENTER TO CONTINUE!";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336\n";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "      \333\333\333\333\333             ";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336";
+	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
+	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
+	SetConsoleTextAttribute(consoleHANDLE, 12);
+	cin.ignore();
+	system("cls");
+}
+
+void hitEnter4()
+{
+	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
@@ -492,13 +488,13 @@ void hitEnter2()
 
 void danielsQuirks1()
 {
-	cout << "TODO: CHANGE THIS BACK TO THE FIRST QUIRK-===================================================================================================";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << "\n\n\n\tDaniel's ";
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "Second Odd Quirk is:";
+	SetConsoleTextAttribute(consoleHANDLE, 12);
+	cout << "First Quirk is an Odd One!:";
 	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n Another quirk is that I enjoy ranch with pretty much most foods especially chicken and pizza.\n"
-		" I tend to actually rate a restaurant on good its ranch is.\n"
-		" I probably wouldn’t go back again if it was bad.\n\n\n";
+	cout << "\n\n\n I am a partnered Twitch Streamer and usually stream on some weekday nights.\n"
+		<< " I randomly taught myself how to use some aircrafts avionics and teach others ages 17-65 on how to use them.\n"
+		<< " Also, I learned last year that I encouraged a 60-year-old to get his private pilot license, and passed.\n\n\n";
 	hitEnter2();
 	return;
 }
