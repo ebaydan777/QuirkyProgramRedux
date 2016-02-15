@@ -4,16 +4,17 @@
 ***                                                         			***
 ***                   		ID INFORMATION                         		***
 ***                                                         			***
-***		Programmers				:			Daniel Maris          		***
-***		Assignment #		 	:   		TA #1.1Q					***
-***		Assignment Name			:	    	Quirky Programming			***
+***		Programmers				:			Mohamed Ahmed, Daniel Maris ***
+***											JP Sandhu, Johnny Nguyen	***
+***		Assignment #		 	:   		TA #1.2Q					***
+***		Assignment Name			:	    	Quirky Programming Redux	***
 ***		Course # and Title		:	    	CISC 192 - C++				***
 ***		Class Meeting Time		:	    	MW 9:35 – 12:45				***
 ***		Instructor				:	    	Professor Forman 			***
-***		Hours			   		:			14.5						***
-***		Difficulty				:	    	3							***
-***		Completion Date			:	    	02/07/2016  				***
-***		Project Name			:  	    	DanielsQuirks	 			***
+***		Hours			   		:			13							***
+***		Difficulty				:	    	5							***
+***		Completion Date			:	    	02/15/2016  				***
+***		Project Name			:  	    	QuirkyProgramRedux			***
 ***                                                         			***
 ***************************************************************************
 ***************************************************************************
@@ -51,7 +52,7 @@
 #include <iostream>		//Required for cin and cout
 #include <string>		//Required for string variables
 #include <windows.h>	//Required for Handle, BACKGROUND_ &
-//FOREGROUND_ consts, SetConsoleTextAttribute	
+						//FOREGROUND_ consts, SetConsoleTextAttribute	
 #include <mmstream.h>	//Required for PlaySound Feature
 
 #pragma comment(lib, "winmm.lib")	
@@ -61,7 +62,7 @@ using namespace std;	//Standard Naming Conventions
 
 
 
-						//FUNCTIONS : EDIT THIS!
+//FUNCTIONS : EDIT THIS!
 
 void welcome();
 //This is a void function with no parameters
@@ -157,7 +158,7 @@ void farewell();
 ///////////////////////////////////////////////////////////////////////////
 //				CONSTANTS DECLARATIONS AND DEFINITIONS					 //
 //																		 //	
-const char		MY_NAME[] = "DANIEL MARIS";		//MY Name			 //
+const char		MY_NAME[] = "DANIEL MARIS";		//MY Name				 //
 //																		 //
 //																		 //
 ///////////////////////////////////////////////////////////////////////////
@@ -171,9 +172,6 @@ const char		MY_NAME[] = "DANIEL MARIS";		//MY Name			 //
 	string userName;				//Login Name Defined				 //
 //																		 //
 ///////////////////////////////////////////////////////////////////////////
-
-int main()
-{
 
 ///////////////////////////////////////////////////////////////////////////
 //				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
@@ -191,6 +189,10 @@ int main()
 //		current time and date!											 //
 //																		 //	
 ///////////////////////////////////////////////////////////////////////////
+
+
+int main()
+{
 
 
 PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
@@ -246,6 +248,7 @@ PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this prog
 	danielsLogo();
 
 	farewell();
+
 	return 0;
 
 }
@@ -401,8 +404,6 @@ SetConsoleTextAttribute(consoleHANDLE, 11); cout << "\n\n\tThank You.\n";
 cin.ignore();
 */
 
-//HIT ENTER MESSAGE 1
-
 
 //DANIEL'S QUIRK INTRO MESSAGE													//#8
 
@@ -430,7 +431,7 @@ void danielsQuirksIntro()
 	system("cls");
 }
 
-//HIT ENTER MESSAGE #4															//#10
+//HIT ENTER MESSAGE	2															//#2
 
 void hitEnter2()
 {
@@ -451,6 +452,8 @@ void hitEnter2()
 	system("cls");
 }
 
+//HIT ENTER MESSAGE	3															//#2
+
 void hitEnter3()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -470,6 +473,8 @@ void hitEnter3()
 	system("cls");
 }
 
+//HIT ENTER MESSAGE	4															//#2
+
 void hitEnter4()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -488,6 +493,8 @@ void hitEnter4()
 	cin.ignore();
 	system("cls");
 }
+
+//DANIEL'S QUIRK #1																//#10
 
 void danielsQuirks1()
 {
@@ -867,12 +874,6 @@ void ericsQuirks2()
 	return;
 }
 
-//DANIEL'S LOGO of an Aircraft with D and M initials on the tail				//#43
-
-
-//HIT ENTER MESSAGE 1														//#44
-
-
 //FAREWELL ENDING MESSAGE														//#45
 
 void farewell()
@@ -898,4 +899,6 @@ void farewell()
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\n\n\n\n\t";
 	system("pause");										// Will Wait for user to hit any key to exit
+
+
 }
