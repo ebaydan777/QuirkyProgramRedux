@@ -112,12 +112,6 @@ int lotteryNumber(string userName);
 void   burpLot(string userName, int lotNum);
 //DESCRIPTION: Prompt user to hit the enter key to continue running program		
 
-//void PromptLogin();
-//This is a void function with no parameters
-
-//void EchoName();
-//This is a void function with no parameters
-
 void johnnysQuirksIntro();
 //This is a void function with no parameters
 
@@ -201,7 +195,10 @@ const string	   ERICS_NAME = "ERICs";								 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
 																		 //
 	string userName;				//Login Name Defined				 //
-//																		 //
+	string name;														 //
+	int lotNumber;														 //
+	int lotNum;															 //
+//																		 //																		 //
 ///////////////////////////////////////////////////////////////////////////
 
 
@@ -229,19 +226,6 @@ int main()
 
 {
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	/*									  LOCAL VARIABLE DECLARATIONS										 */
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
-
-	string userName;
-
-	int lotNum;
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	// PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
@@ -362,16 +346,6 @@ void hitEnter3()
 void hitEnter4()
 {
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	/*									  LOCAL VARIABLE DECLARATIONS										 */
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	//HIT ENTER
 	SetConsoleTextAttribute(consoleHANDLE, 1); Sleep(50);
 	cout << "\n\n\t\t\t  \1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\n";
@@ -385,7 +359,6 @@ void hitEnter4()
 
 						   //STOP SCREEN
 	cin.ignore();
-	//CLEAR SCREEN
 	system("cls");
 }
 
@@ -600,82 +573,33 @@ void jpsLogo()
 	return;
 
 }
+// END OF GROUP'S LOGOS
 
-
-/*USER LOGIN SCREEN (FIRST NAME)																					//#11
-
-SetConsoleTextAttribute(consoleHANDLE, 11);
-cout << "\n\n\n\n\tPlease Login With Your First Name: ";
-SetConsoleTextAttribute(consoleHANDLE, 12); cin >> userName;		//using String Variable for Name.
-
-//ECHO BACK USERNAME IN #11																							//#12
-
-cout << ("\n\n\n\tLogging in at: \n\n");
-cout << "\t";
-system("time /t");
-cout << "\t";
-system("date /t");
-system("color BC"); Sleep(250);		//Cyan background and Red text + Date & Time!
-system("color CB"); Sleep(250);		//Red background and Cyan text
-system("color BC"); Sleep(250);		//Cyan background and Red text
-system("color CB"); Sleep(250);		//Red background and Cyan text
-system("color BC"); Sleep(250);		//Cyan background and Red text
-system("color CB"); Sleep(250);		//Red background and Cyan text
-system("color BC"); Sleep(250);		//Cyan background and Red text
-system("color CB"); Sleep(250);		//Red background and Cyan text
-system("color 07"); Sleep(1);		//Reset to Black background and White text
-system("cls");
-SetConsoleTextAttribute(consoleHANDLE, 11);
-cout << "\n\n\n\n\tYour Login Name ";
-SetConsoleTextAttribute(consoleHANDLE, 12); cout << userName;
-SetConsoleTextAttribute(consoleHANDLE, 11); cout << " Was Accepted!";
-SetConsoleTextAttribute(consoleHANDLE, 12);
-cout << "\n\tYour Login Time was " << __TIMESTAMP__;				//__TIMESTAMP__ Used here for full Date & Time Display
-SetConsoleTextAttribute(consoleHANDLE, 11); cout << "\n\n\tThank You.\n";
-cin.ignore();
-*/
-
-
-// JOHNNY NGUYEN COMPLETED THE FOLLOWING SECTIONS: INTRO & THREE QUIRKS AS FOLLOWS:
-
-// JOHNNY'S QUIRK INTRO MESSAGE																						//#13
+// BEGINNING OF LOTTERY QUESTIONS SECTION: DONE BY MOHAMED
 
 string login()
 {
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// WELCOME MESSAGE TO USER:
+	SetConsoleTextAttribute(consoleHANDLE, 12);
+	cout << "\n\n\n\n\n\n\n\n\t\tWelcome Aboard! What's your First Name?:  ";
 
-	/*									  LOCAL VARIABLE DECLARATIONS										 */
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
-	string name;
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	SetConsoleTextAttribute(consoleHANDLE, 4);
-	cout << "\n\n\n\n\n\n\n\n\t\tHey, welcome aboard - what's your first name:  ";
-
-	//GET USERNAME
-	cin >> name;
-	//CLEAR SCREEN
+	// GET USERNAME
+	SetConsoleTextAttribute(consoleHANDLE, 11); cin >> name;
+	// CLEAR SCREEN
 	cin.ignore();
-
-	//cout << "\n\n\t\t\t\tThank you ";
-	////BURP BACK USERNAME
-	//cout << name;
 
 	return name;
 }
 
 void burpBack(string theUserName)
 {
-	cout << "\n\n\t\tThank you ";
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tThank you ";
 	//BURP BACK USERNAME
-	cout << theUserName;
-	cout << " great to have you here!";
-	cin.ignore();
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << theUserName;
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << ", Great to have you here!";
+	cout << "\n\n\n\n\n\n\n\n\n";
+	system("pause");
 	system("cls");
 	return;
 }
@@ -683,34 +607,29 @@ void burpBack(string theUserName)
 int lotteryNumber(string userName2)
 {
 
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	/*									  LOCAL VARIABLE DECLARATIONS										 */
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
-	int lotNumber;
-
-	///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-	cout << "\n\n\n\n\n\n\n\n\tSo, ";
-	cout << userName2;
-	cout << ", enter what you think the lottery number will be: ";
-	cin >> lotNumber;
+	cout << "\n\n\n\n\n\n\n\n\tSo ";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << userName2;
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << ", Enter what you think the Winning Lottery Number will be: ";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cin >> lotNumber;
 	cin.ignore();
 	return lotNumber;
 }
 void burpLot(string user_Name, int lot_Num)
 {
-	cout << "\n\n\t\tGee whiz, ";
-	cout << user_Name;
-	cout << " your guess of " << lot_Num << " is close,\n\t\t but no cigar since the actual winner is ";
-	cout << lot_Num + 100 << "...";
-	cin.ignore();
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tGee Whiz, ";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << user_Name;
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Your guess of ";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << lot_Num;
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " is close,\n\n\t\tbut no cigar since the Actual Winner is ";
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << lot_Num + 100 << "...";
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\n\n\n\n\n\n\n";
+	system("pause");
 	system("cls");
 	return;
 }
+// END OF LOTTERY NUMBERS QUESTIONAIRE
+
+// BEGINNING OF JOHNNYS INTRO AND TWO QUIRKS PLUS HIS OWN:
 
 void johnnysQuirksIntro()
 {
