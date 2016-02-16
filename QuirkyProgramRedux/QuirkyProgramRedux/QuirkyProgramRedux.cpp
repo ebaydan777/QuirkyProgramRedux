@@ -300,17 +300,17 @@ void hitEnter2()
 void hitEnter3()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HIT ENTER TO CONTINUE!";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336\n";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "  HIT ENTER TO CONTINUE!";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << " \336\n";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "      \333\333\333\333\333             ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << "\335";
+	SetConsoleTextAttribute(consoleHANDLE, 9); cout << "      \333\333\333\333\333             ";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << " \336";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
+	SetConsoleTextAttribute(consoleHANDLE, 251); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cin.ignore();
 	system("cls");
@@ -392,7 +392,7 @@ void johnnysLogo()
 		<< "\t\t\t\t\t\t       \333\333  \333\333      \333\333    \333\333\333\333\n"
 		<< "\t\t\t\t\t\t       \333\333\333\333\333\333      \333\333     \333\333\333";
 
-	hitEnter1();
+	hitEnter3();
 	return;
 }
 
@@ -596,21 +596,21 @@ cin.ignore();
 void johnnysQuirksIntro()
 {
 	cout << "\n\n\n\n\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1" << "\t\t\t       \1";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1" << "\t\t\t       \1";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HERE COMES ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << JOHNNYS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " QUIRKS!  ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\n";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1";
+	SetConsoleTextAttribute(consoleHANDLE, 249); cout << "  HERE COMES ";
+	SetConsoleTextAttribute(consoleHANDLE, 249); cout << JOHNNYS_NAME;
+	SetConsoleTextAttribute(consoleHANDLE, 249); cout << " QUIRKS!  ";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1\n";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "             \337\337\337\337\337\337\337          ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\n";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "             \337\337\337\337\337\337\337          ";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1\n";
 	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
+	SetConsoleTextAttribute(consoleHANDLE, 185); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\n\n\n\n";
 	system("pause");
@@ -626,14 +626,14 @@ void johnnysQuirksIntro()
 
 void johnnysQuirk()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
+	SetConsoleTextAttribute(consoleHANDLE, 10);
 	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JOHNNYS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n He is a partnered Twitch Streamer and usually stream on some weekday nights.\n"
-		<< " He randomly taught himself how to use some aircrafts avionics and teach others ages 17-65 on how to use them.\n"
-		<< " Also, he learned last year that he encouraged a 60-year-old to get his private pilot license, and passed.\n\n\n";
+	SetConsoleTextAttribute(consoleHANDLE, 12); cout << JOHNNYS_NAME;
+	SetConsoleTextAttribute(consoleHANDLE, 9); cout << " Quirk: ";
+	SetConsoleTextAttribute(consoleHANDLE, 12);
+	cout << "\n\n\n He speaks both Vietnamese and English.\n"
+		<< " He only speak vietnamese to my family members.\n"
+		<< " The only member of my family that I only speak english to is my brother.\n\n\n";
 	hitEnter3();
 	return;
 }
@@ -642,11 +642,11 @@ void johnnysQuirk()
 
 void allisonsQuirk()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
+	SetConsoleTextAttribute(consoleHANDLE, 10);
 	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << ALLISONS_NAME;
+	SetConsoleTextAttribute(consoleHANDLE, 13); cout << ALLISONS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
+	SetConsoleTextAttribute(consoleHANDLE, 13);
 	cout << "\n\n\n She likes eating her food in a particular order from food she likes the least to food she like the most.\n"
 		" she start by eating a small amount of everything on her plate and rating it in her head. She slowly works around \n"
 		" her plate eating her least favorite items. Allison eventually finishes her plate eating her favorite thing last.\n\n\n";
@@ -658,11 +658,11 @@ void allisonsQuirk()
 
 void seansQuirk()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
+	SetConsoleTextAttribute(consoleHANDLE, 10);
 	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << SEANS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
+	SetConsoleTextAttribute(consoleHANDLE, 14); cout << SEANS_NAME;
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << " Quirk: ";
+	SetConsoleTextAttribute(consoleHANDLE, 14);
 	cout << "\n\n\n He likes to laugh a lot.\n"
 		<< " He can pretty much laugh at anything.\n"
 		<< " Maybe it is his sense of humor, or he is just weird.\n\n\n";
