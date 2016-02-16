@@ -862,9 +862,9 @@ void jpsQuirk()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JPS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 6);                                // gold text
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JPS_NAME;             // Bright blue text
+	SetConsoleTextAttribute(consoleHANDLE, 8); cout << " Quirk: ";            // pale purple text
+	SetConsoleTextAttribute(consoleHANDLE, 3);                                // blue text
 	cout << "\n\n\n JP used to hate slurpees until a short time ago \n"
 		" His mind changed about slurpees when his parents open their own 7-11 store, now he loves them!\n"
 		" His favorite flavor is Blue Raspberry but Cherry is a close second.\n\n\n";
@@ -879,8 +879,8 @@ void toddsQuirk()
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << TODDS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 6);
+	SetConsoleTextAttribute(consoleHANDLE, 8); cout << " Quirk: ";
+	SetConsoleTextAttribute(consoleHANDLE, 3);
 	cout << "\n\n\n At one point, Todd used to raise pigeons!\n"
 		" His favorite pigeon in particular is the Birmingham Roller.\n"
 		" This pigeon is famous for their ability to do backflips mid-air!\n\n\n";
@@ -895,8 +895,8 @@ void ericsQuirk()
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << ERICS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 6);
+	SetConsoleTextAttribute(consoleHANDLE, 8); cout << " Quirk: ";
+	SetConsoleTextAttribute(consoleHANDLE, 3);
 	cout << "\n\n\n Eric hates the mall, plain and simple. He disagrees with the level of advertising and fake potrayal\n"
 		" everywhere you look. Eric feels as though everyone is there to sell you something or manipulate you into\n"
 		" buying something you dont necessarily need.\n\n\n";
