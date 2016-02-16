@@ -349,8 +349,9 @@ void hitEnter5()
 	cout << "\t\t\t\t          ";
 	SetConsoleTextAttribute(consoleHANDLE, 87);                     // purple background
 	cout<<"\6 Hit ENTER to Continue \6\n";
-	SetConsoleTextAttribute(consoleHANDLE, 11 );                    // Blue text 
+	SetConsoleTextAttribute(consoleHANDLE, 11);                    // Blue text 
 	cout << "\t\t\t\t          \6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\n";
+	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cin.ignore();
 	system("cls");
 	
