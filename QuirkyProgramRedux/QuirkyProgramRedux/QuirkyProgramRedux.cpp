@@ -62,11 +62,10 @@ using namespace std;	//Standard Naming Conventions
 
 
 
-//FUNCTIONS : EDIT THIS!
+//FUNCTIONS WERE DONE BY JOHNNY NGUYEN AND DANIEL MARIS
 
 void welcome();
 //This is a void function with no parameters
-
 
 void hitEnter1();
 //This is a void function with no parameters
@@ -81,6 +80,7 @@ void hitEnter4();
 //This is a void function with no parameters
 
 void hitEnter5();
+//This is a void function with no parameters
 
 void johnnysLogo();
 //This is a void function with no parameters
@@ -109,7 +109,7 @@ void johnnysQuirk();
 void allisonsQuirk();
 //This is a void function with no parameters
 
-void johnnysQuirk2();
+void seansQuirk();
 //This is a void function with no parameters
 
 void danielsQuirksIntro();
@@ -152,6 +152,9 @@ void farewell();
 //This is a void function with no parameters
 
 
+
+//MICHAELANGELO WAS DONE BY DANIEL MARIS:
+
 ///////////////////////////////////////////////////////////////////////////
 //				CONSTANTS DECLARATIONS AND DEFINITIONS					 //
 ///////////////////////////////////////////////////////////////////////////
@@ -162,6 +165,7 @@ const string       DANIELS_NAME = "DANIELs";							 //
 const string       MOHAMEDS_NAME = "MOHAMEDs";							 //
 const string       JPS_NAME = "JPs";									 //
 const string	   ALLISONS_NAME = "ALLISONs";							 //
+const string	   SEANS_NAME = "SEANs";								 //
 const string	   ALEXS_NAME = "ALEXs";								 //
 const string	   GEORGES_NAME = "GEORGEs";							 //
 const string	   TODDS_NAME = "TODDs";								 //	
@@ -585,6 +589,7 @@ cin.ignore();
 */
 
 
+// JOHNNY NGUYEN COMPLETED THE FOLLOWING SECTIONS: INTRO & THREE QUIRKS AS FOLLOWS:
 
 // JOHNNY'S QUIRK INTRO MESSAGE																						//#13
 
@@ -614,7 +619,7 @@ void johnnysQuirksIntro()
 	// QUIRKS USED FOR JOHNNY:
 	johnnysQuirk();
 	allisonsQuirk();
-	johnnysQuirk2();
+	seansQuirk();
 }
 
 // JOHNNY'S QUIRK 																									//#14
@@ -626,9 +631,9 @@ void johnnysQuirk()
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JOHNNYS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
 	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n I am a partnered Twitch Streamer and usually stream on some weekday nights.\n"
-		<< " I randomly taught myself how to use some aircrafts avionics and teach others ages 17-65 on how to use them.\n"
-		<< " Also, I learned last year that I encouraged a 60-year-old to get his private pilot license, and passed.\n\n\n";
+	cout << "\n\n\n He is a partnered Twitch Streamer and usually stream on some weekday nights.\n"
+		<< " He randomly taught himself how to use some aircrafts avionics and teach others ages 17-65 on how to use them.\n"
+		<< " Also, he learned last year that he encouraged a 60-year-old to get his private pilot license, and passed.\n\n\n";
 	hitEnter3();
 	return;
 }
@@ -649,23 +654,23 @@ void allisonsQuirk()
 	return;
 }
 
-// JOHNNY'S QUIRK #2																								//#16
+// SEAN'S QUIRK																										//#16
 
-void johnnysQuirk2()
+void seansQuirk()
 {
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JOHNNYS_NAME;
+	SetConsoleTextAttribute(consoleHANDLE, 11); cout << SEANS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
 	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n I am a partnered Twitch Streamer and usually stream on some weekday nights.\n"
-		<< " I randomly taught myself how to use some aircrafts avionics and teach others ages 17-65 on how to use them.\n"
-		<< " Also, I learned last year that I encouraged a 60-year-old to get his private pilot license, and passed.\n\n\n";
+	cout << "\n\n\n He likes to laugh a lot.\n"
+		<< " He can pretty much laugh at anything.\n"
+		<< " Maybe it is his sense of humor, or he is just weird.\n\n\n";
 	hitEnter3();
 	return;
 }
 
-
+// DANIEL MARIS COMPLETED THE FOLLOWING SECTIONS: INTRO & THREE QUIRKS
 // DANIEL'S QUIRK INTRO MESSAGE																						//#17
 void danielsQuirksIntro()
 {
