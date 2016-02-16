@@ -343,21 +343,17 @@ void hitEnter4()
 
 void hitEnter5()
 {
-	cout << "\n\n\n\n\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HIT ENTER TO CONTINUE!";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336\n";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "      \333\333\333\333\333             ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
-	SetConsoleTextAttribute(consoleHANDLE, 12);
+	
+	SetConsoleTextAttribute(consoleHANDLE, 11);						// Blue( +8) text
+	cout << "\n\n\n\t\t\t\t          \6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\n";         //   Box around Hit enter.
+	cout << "\t\t\t\t          ";
+	SetConsoleTextAttribute(consoleHANDLE, 87);                     // purple background
+	cout<<"\6 Hit ENTER to Continue \6\n";
+	SetConsoleTextAttribute(consoleHANDLE, 11 );                    // Blue text 
+	cout << "\t\t\t\t          \6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\6\n";
 	cin.ignore();
 	system("cls");
+	
 }
 
 
@@ -520,35 +516,35 @@ void mohamedsLogo()
 	return;
 }
 
-// JPs LOGO HERE - DESCRIBE IT																						//#10
+// JPs LOGO HERE - Blue waves and black background with a black background.													//#10
 
 void jpsLogo()
 {
 	// Color of background and Logo.
 	SetConsoleTextAttribute(consoleHANDLE, 1);
 	// Start of Waves
-	cout << "\t                           \333\333\333\333\n";
-	cout << "\t                          \333\333\333\333\333\333\n";
-	cout << "\t                         \333\333\333\333\333\333\333\333\n";
-	cout << "\t            \333\333\333         \333\333\333\333\333\333\333\333\333\333"
-		<< "\t        \333\333\333\n";
-	cout << "\t           \333\333\333\333\333       \333\333\333\333\333\333\333  \333\333"
-		<< "\t       \333\333\333\333\333\n";
-	cout << "\t          \333\333\333\333 \333\333     \333\333\333\333\333\333\333"
-		<< "\t           \333\333\333\333 \333\333\n";
-	cout << "\t         \333\333\333\333        \333\333\333\333\333\333\333\333          \333\333\333\333\n";
-	cout << "\t        \333\333\333\333\333       \333\333\333\333\333\333\333\333\333\333"
-		<< "\t        \333\333\333\333\333\n";
-	cout << "\t       \333\333\333\333\333\333\333     \333\333\333\333\333\333\333\333\333\333\333\333"
-		<< "\t      \333\333\333\333\333\333\333\n";
-	cout << "\t   \333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333"
-		<< "\t\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\n";
+	cout << "                           \333\333\333\333\n";
+	cout << "                          \333\333\333\333\333\333\n";
+	cout << "                         \333\333\333\333\333\333\333\333\n";
+	cout << "            \333\333\333         \333\333\333\333\333\333\333\333\333\333"
+		<< "        \333\333\333\n";
+	cout << "           \333\333\333\333\333       \333\333\333\333\333\333\333  \333\333"
+		<< "       \333\333\333\333\333\n";
+	cout << "          \333\333\333\333 \333\333     \333\333\333\333\333\333\333"
+		<< "           \333\333\333\333 \333\333\n";
+	cout << "         \333\333\333\333        \333\333\333\333\333\333\333\333          \333\333\333\333\n";
+	cout << "        \333\333\333\333\333       \333\333\333\333\333\333\333\333\333\333"
+		<< "        \333\333\333\333\333\n";
+	cout << "       \333\333\333\333\333\333\333     \333\333\333\333\333\333\333\333\333\333\333\333"
+		<< "      \333\333\333\333\333\333\333\n";
+	cout << "   \333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333"
+		<< "\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\333\n";
 	// START OF NAME
-	cout << "\t                \333              \333    \333\n";
-	cout << "\t                \333              \333    \333\n";
-	cout << "\t            \333   \333              \333\333\333\333\333\333\n";
-	cout << "\t            \333   \333              \333\n";
-	cout << "\t            \333\333\333\333\333              \333\n\n";
+	cout << "                \333              \333    \333\n";
+	cout << "                \333              \333    \333\n";
+	cout << "            \333   \333              \333\333\333\333\333\333\n";
+	cout << "            \333   \333              \333\n";
+	cout << "            \333\333\333\333\333              \333\n\n";
 	hitEnter1();
 	return;
 
@@ -868,7 +864,7 @@ void jpsQuirk()
 	cout << "\n\n\n\t ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << JPS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
+	SetConsoleTextAttribute(consoleHANDLE, 6);                                // gold text
 	cout << "\n\n\n JP used to hate slurpees until a short time ago \n"
 		" His mind changed about slurpees when his parents open their own 7-11 store, now he loves them!\n"
 		" His favorite flavor is Blue Raspberry but Cherry is a close second.\n\n\n";
@@ -884,7 +880,7 @@ void toddsQuirk()
 	cout << "\n\n\n\t ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << TODDS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
+	SetConsoleTextAttribute(consoleHANDLE, 6);
 	cout << "\n\n\n At one point, Todd used to raise pigeons!\n"
 		" His favorite pigeon in particular is the Birmingham Roller.\n"
 		" This pigeon is famous for their ability to do backflips mid-air!\n\n\n";
@@ -900,7 +896,7 @@ void ericsQuirk()
 	cout << "\n\n\n\t ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << ERICS_NAME;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
+	SetConsoleTextAttribute(consoleHANDLE, 6);
 	cout << "\n\n\n Eric hates the mall, plain and simple. He disagrees with the level of advertising and fake potrayal\n"
 		" everywhere you look. Eric feels as though everyone is there to sell you something or manipulate you into\n"
 		" buying something you dont necessarily need.\n\n\n";
