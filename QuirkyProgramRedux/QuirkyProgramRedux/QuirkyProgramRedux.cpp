@@ -23,9 +23,11 @@
 ***                                                         			***
 ***   	This program will display various quirks from some of the		***
 ***   	students in Professor Forman's C++ class. You are able to		***
-***   	view my airplane logo and 2 quirks from each student. There		***
-***     are a total of 7 student's quirks including myself with a		***
-***		total of 14 quirks altogether.									***
+***   	view Daniels' airplane logo, JP's Waves logo, Mohamed's         ***
+***     Octopus logo, and  Johnny's happy face logo. There are          ***
+***		12 logos in total. With each group member doing three           ***
+***		including themselves.                                           ***
+***                                                                     ***
 ***                                                         			***
 ***************************************************************************
 ***************************************************************************
