@@ -872,26 +872,11 @@ void georgesQuirk()
 
 void mohamedsQuirksIntro()
 {
-	cout << "\n\n\n\n\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1" << "\t\t\t       \1";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HERE COMES ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << MOHAMEDS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " QUIRKS! ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\n";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "             \337\337\337\337\337\337\337\337         ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\n";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1";
-	SetConsoleTextAttribute(consoleHANDLE, 12);
-	cout << "\n\n\n\n\n\n\n\n\n";
-	system("pause");
-	system("cls");
+	cout << "\n\n\n\n\n\n\n\n\n\t\t\t   Here Comes ";
+	cout << MOHAMEDS_NAME;
+	cout << "'s Quirks\n";
+
+	hitEnter4();
 
 	// QUIRKS USED FOR MOHAMED:
 	mohamedsQuirk1();
@@ -903,14 +888,12 @@ void mohamedsQuirksIntro()
 
 void mohamedsQuirk1()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
-	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << MOHAMEDS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n Alex has a tendency to be an active sleeper. He is one to toss and turn, talk and even \n"
-		" yell in his sleep. He has even slept walk before! \n"
-		" There is even an instance in High School that he took an order during his sleep for Subway, where he worked.\n\n\n";
+	SetConsoleTextAttribute(consoleHANDLE, 4);
+	cout << "\n\n\n\n\t\t\t    "
+		<< MOHAMEDS_NAME
+		<< "'s First Quirk";
+	cout << "\n\n\n\n\t  I like to watch Japanese anime. During high school I watched a\n\tseason of a show called Naruto "
+		"3 times, having at least 220 episodes \n\tfor the first season. Adding up to a whopping 660 episodes repeated.";
 	hitEnter4();
 	return;
 }
@@ -919,14 +902,11 @@ void mohamedsQuirk1()
 
 void mohamedsQuirk2()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
-	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << MOHAMEDS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n George likes to play online computer games. His favorites are World of Warcraft, Diablo 3 & \n"
-		" Heroes of the Storm. He dislikes playing by himself so he make sure a friend joins him when he's actively online.\n"
-		" He realizes how much time he wastes when play alone, but friends help forget and just enjoy the game!\n\n\n";
+	SetConsoleTextAttribute(consoleHANDLE, 3);
+	cout << "\n\n\n\n\t\t\t   Steven's First Quirk ";
+	cout << "\n\n\n\n\t He really enjoys to cycle, and regularly practices cycling when\n\t he has time to. He has rode multiple "
+		"countries in a year, equaling\n\t up to 100 plus miles. He is planning on using his tax return\n\t money to buy himself a new bike.";
+
 	hitEnter4();
 	return;
 }
@@ -935,14 +915,10 @@ void mohamedsQuirk2()
 
 void mohamedsQuirk3()
 {
-	SetConsoleTextAttribute(consoleHANDLE, 12);
-	cout << "\n\n\n\t ";
-	SetConsoleTextAttribute(consoleHANDLE, 11); cout << MOHAMEDS_NAME;
-	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Quirk: ";
-	SetConsoleTextAttribute(consoleHANDLE, 11);
-	cout << "\n\n\n George likes to play online computer games. His favorites are World of Warcraft, Diablo 3 & \n"
-		" Heroes of the Storm. He dislikes playing by himself so he make sure a friend joins him when he's actively online.\n"
-		" He realizes how much time he wastes when play alone, but friends help forget and just enjoy the game!\n\n\n";
+	SetConsoleTextAttribute(consoleHANDLE, 2);
+	cout << "\n\n\n\n\t\t\t   Elijah's First Quirk ";
+	cout << "\n\n\n\n\t He loves to make music, usually late at night, when he can’t sleep.\n\tHe would log on to his computer and "
+		"record music. He experiments\n\twith different programs to make beats while he makes his music.";
 	hitEnter4();
 	return;
 }
