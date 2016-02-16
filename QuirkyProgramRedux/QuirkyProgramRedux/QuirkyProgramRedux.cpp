@@ -94,6 +94,22 @@ void mohamedsLogo();
 void jpsLogo();
 //This is a void function with no parameters
 
+//Void function with no parameters
+string login();
+//DESCRIPTION: Prompt user to hit the enter key to continue running program 
+
+//Void function with no parameters
+void   burpBack(string userName);
+//DESCRIPTION: Prompt user to hit the enter key to continue running program
+
+//Void function with no parameters
+int lotteryNumber(string userName);
+//DESCRIPTION: Prompt user to hit the enter key to continue running program 
+
+//Void function with no parameters
+void   burpLot(string userName, int lotNum);
+//DESCRIPTION: Prompt user to hit the enter key to continue running program		
+
 //void PromptLogin();
 //This is a void function with no parameters
 
@@ -211,9 +227,31 @@ int main()
 
 {
 
-PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/*									  LOCAL VARIABLE DECLARATIONS										 */
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	string userName;
+
+	int lotNum;
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	// PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
 	welcome();						// WELCOME MESSAGE FOLLOWED BY INDIVIDUAL LOGO'S FROM THE GROUP
+
+	userName = login();
+	
+	burpBack(userName);
+	
+	lotNum = lotteryNumber(userName);
+	
+	burpLot(userName, lotNum);
 
 	johnnysQuirksIntro();			// JOHNNY, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
 
@@ -321,20 +359,31 @@ void hitEnter3()
 
 void hitEnter4()
 {
-	cout << "\n\n\n\n\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "  HIT ENTER TO CONTINUE!";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336\n";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "      \333\333\333\333\333             ";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << " \336";
-	SetConsoleTextAttribute(consoleHANDLE, 7); cout << "\n\t\t\t\t";
-	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\334\336";
-	SetConsoleTextAttribute(consoleHANDLE, 12);
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/*									  LOCAL VARIABLE DECLARATIONS										 */
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//HIT ENTER
+	SetConsoleTextAttribute(consoleHANDLE, 1); Sleep(50);
+	cout << "\n\n\t\t\t  \1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\n";
+	SetConsoleTextAttribute(consoleHANDLE, 2); Sleep(50);
+	cout << "\t\t\t  \1 <<HIT ENTER TO CONTINUE>> \1\n\t\t\t  ";
+	SetConsoleTextAttribute(consoleHANDLE, 1); Sleep(50);
+	cout << "\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\1\n\n\t\t\t    ";
+	SetConsoleTextAttribute(consoleHANDLE, 3);
+
+	cout << __TIMESTAMP__; //SHOW TIME
+
+						   //STOP SCREEN
 	cin.ignore();
+	//CLEAR SCREEN
 	system("cls");
 }
 
@@ -588,6 +637,78 @@ cin.ignore();
 // JOHNNY NGUYEN COMPLETED THE FOLLOWING SECTIONS: INTRO & THREE QUIRKS AS FOLLOWS:
 
 // JOHNNY'S QUIRK INTRO MESSAGE																						//#13
+
+string login()
+{
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/*									  LOCAL VARIABLE DECLARATIONS										 */
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
+	string name;
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	SetConsoleTextAttribute(consoleHANDLE, 4);
+	cout << "\n\n\n\n\n\n\n\n\t\tHey, welcome aboard - what's your first name:  ";
+
+	//GET USERNAME
+	cin >> name;
+	//CLEAR SCREEN
+	cin.ignore();
+
+	//cout << "\n\n\t\t\t\tThank you ";
+	////BURP BACK USERNAME
+	//cout << name;
+
+	return name;
+}
+
+void burpBack(string theUserName)
+{
+	cout << "\n\n\t\tThank you ";
+	//BURP BACK USERNAME
+	cout << theUserName;
+	cout << " great to have you here!";
+	cin.ignore();
+	system("cls");
+	return;
+}
+
+int lotteryNumber(string userName2)
+{
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	/*									  LOCAL VARIABLE DECLARATIONS										 */
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);
+	int lotNumber;
+
+	///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	cout << "\n\n\n\n\n\n\n\n\tSo, ";
+	cout << userName2;
+	cout << ", enter what you think the lottery number will be: ";
+	cin >> lotNumber;
+	cin.ignore();
+	return lotNumber;
+}
+void burpLot(string user_Name, int lot_Num)
+{
+	cout << "\n\n\t\tGee whiz, ";
+	cout << user_Name;
+	cout << " your guess of " << lot_Num << " is close,\n\t\t but no cigar since the actual winner is ";
+	cout << lot_Num + 100 << "...";
+	cin.ignore();
+	system("cls");
+	return;
+}
 
 void johnnysQuirksIntro()
 {
