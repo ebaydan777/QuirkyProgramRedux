@@ -35,7 +35,7 @@
 ***************************************************************************
 ***                                                         			***
 ***                        			CREDITS					            ***
-***                                                         			***
+***																		***
 ***   	Thank you to everyone that was able to help me with tips		***
 ***		and tricks to get some of the lines in here working proper!		***
 ***                                                         			***
@@ -50,6 +50,40 @@
 ***                                                         			***
 ***************************************************************************
 ***************************************************************************
+***																		***		
+***						   CUSTOM DEFINED FUNCTIONS						***										
+***						 												***
+***		welcome();														***
+***		hitEnter1();													***
+***		hitEnter2();													***
+***		hitEnter3();													***
+***		hitEnter4();													***
+***		hitEnter5();													***
+***		johnnysLogo();													***
+***		danielsLogo();													***
+***		mohamedsLogo();													***
+***		jpsLogo();														***
+***		burpBack(string userName);										***
+***		lotteryNumber(string userName);									***
+***		burpLot(string userName, int lotNum);							***
+***		johnnysQuirksIntro();											***
+***		johnnysQuirk();													***
+***		allisonsQuirk();												***
+***		seansQuirk();													***
+***		danielsQuirksIntro();											***
+***		danielsQuirk();													***
+***		alexsQuirk();													***
+***		georgesQuirk();													***
+***		mohamedsQuirksIntro();											***
+***		mohamedsQuirk1();												***
+***		mohamedsQuirk2();												***
+***		mohamedsQuirk3();												***
+***		jpsQuirksIntro();												***
+***		jpsQuirk();														***
+***		toddsQuirk();													***
+***		ericsQuirk();													***
+***		farewell();														***
+***																		***
 **************************************************************************/
 
 
@@ -190,21 +224,6 @@ const string	   ERICS_NAME = "ERICs";								 //
 
 
 ///////////////////////////////////////////////////////////////////////////
-//				   	  LOCAL VARIABLE DECLARATIONS						 //
-///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //
-	string userName;				//Login Name Defined				 //
-	string name;					//Name used for Lottery Question	 //
-	int lotNumber;					//Lottery Number Integer by User	 //
-	int lotNum;						//Lottery Numbers Winning Number	 //
-//																		 //
-///////////////////////////////////////////////////////////////////////////
-
-
-///////////////////////////////////////////////////////////////////////////
 //				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
 ///////////////////////////////////////////////////////////////////////////	
 //																		 //
@@ -228,8 +247,22 @@ int main()
 
 {
 
+///////////////////////////////////////////////////////////////////////////
+//				   	  LOCAL VARIABLE DECLARATIONS						 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		Using HANDLE with predefined RGB colors							 //
+	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
+																		 //
+	string userName;				//Login Name Defined				 //
+	int lotNum;						//Lottery Numbers Winning Number	 //
+//																		 //
+///////////////////////////////////////////////////////////////////////////
+
+// MUSIC GOES HERE:
 PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
+// BEGIN MAIN HERE:
 
 	welcome();							// WELCOME MESSAGE FOLLOWED BY INDIVIDUAL LOGO'S FROM THE GROUP
 
@@ -255,7 +288,25 @@ PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this prog
 
 }
 
-// WELCOME MESSAGE																								//#1
+// WELCOME MESSAGE																		//#1
+
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//		***EXAMPLE: PLEASE CHANGE ALL OF THIS!!!!						 //
+//																		 //
+//		NAME:			Welcome											 //
+//		DESCRIPTION:	message to greet user in a friendly manner		 //
+//																		 //
+//																		 //
+//		NOTE: Give function names that are verbs AND give variables/     //
+//			  constants names that are nouns.							 //	
+//																		 //
+//		TIP: the NAME and the DESCRIPTION here can be copied directly	 //
+//			from the Prototypes!										 //
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 void welcome()
 {
 ///////////////////////////////////////////////////////////////////////////
@@ -702,7 +753,6 @@ void burpBack(string theUserName)
 //		Using HANDLE with predefined RGB colors							 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
 																		 //		
-	string userName;				//Login Name Defined				 //
 //																		 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -743,7 +793,6 @@ int lotteryNumber(string userName2)
 //		Using HANDLE with predefined RGB colors							 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
 																		 //		
-	string userName;				//Login Name Defined				 //
 	int lotNumber;					//Lottery Number Integer by User	 //
 //																		 //
 ///////////////////////////////////////////////////////////////////////////
@@ -766,11 +815,7 @@ void burpLot(string user_Name, int lot_Num)
 //																		 //
 //		Using HANDLE with predefined RGB colors							 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //		
-	string userName;				//Login Name Defined				 //
-	int lotNumber;					//Lottery Number Integer by User	 //
-	int lotNum;						//Lottery Numbers Winning Number	 //
-//																		 //
+//																		 //		
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tGee Whiz, ";
@@ -1238,6 +1283,8 @@ void farewell()
 //																		 //
 //		Using HANDLE with predefined RGB colors							 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
+																		 //
+	string userName;													 //
 //																		 //	
 ///////////////////////////////////////////////////////////////////////////
 
