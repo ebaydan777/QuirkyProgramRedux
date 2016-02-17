@@ -204,7 +204,6 @@ const string	   ERICS_NAME = "ERICs";								 //
 ///////////////////////////////////////////////////////////////////////////
 
 
-
 ///////////////////////////////////////////////////////////////////////////
 //				 OTHER SELF-NOTES INCLUDED FROM HANDOUTS				 //
 ///////////////////////////////////////////////////////////////////////////	
@@ -707,7 +706,23 @@ void burpBack(string theUserName)
 //																		 //
 ///////////////////////////////////////////////////////////////////////////
 
+	cout << ("\n\n\n\tLogging in at: \n\n");
+	cout << "\t";
+	system("time /t");
+	cout << "\t";
+	system("date /t");
+	system("color BC"); Sleep(250);		//Cyan background and Red text + Date & Time!
+	system("color CB"); Sleep(250);		//Red background and Cyan text
+	system("color BC"); Sleep(250);		//Cyan background and Red text
+	system("color CB"); Sleep(250);		//Red background and Cyan text
+	system("color BC"); Sleep(250);		//Cyan background and Red text
+	system("color CB"); Sleep(250);		//Red background and Cyan text
+	system("color BC"); Sleep(250);		//Cyan background and Red text
+	system("color CB"); Sleep(250);		//Red background and Cyan text
+	system("color 07"); Sleep(1);		//Reset to Black background and White text
+	system("cls");
 	//Thank You Message
+	cout << "\n\n\n\n\n\n\n\n\n";
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tThank you ";
 	//BURP BACK USERNAME
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << theUserName;
