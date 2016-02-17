@@ -540,7 +540,7 @@ void mohamedsLogo()
 }
 
 // JPs LOGO HERE - Blue waves and black background with a black background.													//#10
-
+//void with no parameters
 void jpsLogo()
 {
 	// Color of background and Logo.
@@ -576,6 +576,7 @@ void jpsLogo()
 
 // BEGINNING OF LOTTERY QUESTIONS SECTION: DONE BY MOHAMED
 
+//non-void with no parameters login function
 string login()
 {
 
@@ -591,8 +592,10 @@ string login()
 	return name;
 }
 
+//void with call by value parameters
 void burpBack(string theUserName)
 {
+	//thank you message
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tThank you ";
 	//BURP BACK USERNAME
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << theUserName;
@@ -603,12 +606,15 @@ void burpBack(string theUserName)
 	return;
 }
 
+//non-void with parameters, prompting of the lottery number
 int lotteryNumber(string userName2)
 {
-
+	//prompting of the lottery number
 	cout << "\n\n\n\n\n\n\n\n\tSo ";
+	//burpback username
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << userName2;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << ", Enter what you think the Winning Lottery Number will be: ";
+	//get requested lottery number
 	SetConsoleTextAttribute(consoleHANDLE, 11); cin >> lotNumber;
 	cin.ignore();
 	return lotNumber;
