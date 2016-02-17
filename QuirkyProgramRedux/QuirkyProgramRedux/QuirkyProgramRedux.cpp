@@ -98,19 +98,19 @@ void mohamedsLogo();
 void jpsLogo();
 //This is a void function with no parameters
 
-//Void function with no parameters
+//Non-void function with no parameters
 string login();
 //DESCRIPTION: Prompt user to hit the enter key to continue running program 
 
-//Void function with no parameters
+//Void function with parameters
 void   burpBack(string userName);
 //DESCRIPTION: Prompt user to hit the enter key to continue running program
 
-//Void function with no parameters
+//Non-void function with parameters
 int lotteryNumber(string userName);
 //DESCRIPTION: Prompt user to hit the enter key to continue running program 
 
-//Void function with no parameters
+//Void function with parameters
 void   burpLot(string userName, int lotNum);
 //DESCRIPTION: Prompt user to hit the enter key to continue running program		
 
