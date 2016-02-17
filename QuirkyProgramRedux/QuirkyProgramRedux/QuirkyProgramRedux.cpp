@@ -195,9 +195,9 @@ const string	   ERICS_NAME = "ERICs";								 //
 	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
 																		 //
 	string userName;				//Login Name Defined				 //
-	string name;														 //
-	int lotNumber;														 //
-	int lotNum;															 //
+	string name;					//Name used for Lottery Question	 //
+	int lotNumber;					//Lottery Number Integer by User	 //
+	int lotNum;						//Lottery Numbers Winning Number	 //
 //																		 //																		 //
 ///////////////////////////////////////////////////////////////////////////
 
@@ -229,25 +229,25 @@ int main()
 	
 	// PlaySound(TEXT("topgun.wav"), 0, SND_ASYNC);	 //Play song until end of this program.
 
-	welcome();						// WELCOME MESSAGE FOLLOWED BY INDIVIDUAL LOGO'S FROM THE GROUP
+	welcome();							// WELCOME MESSAGE FOLLOWED BY INDIVIDUAL LOGO'S FROM THE GROUP
 
-	userName = login();
+	userName = login();					// LOGIN SCREEN WHERE USER LOGINS TO LOTTERY NUMBER QUESTION
 	
-	burpBack(userName);
+	burpBack(userName);					// THIS BURPS BACK USERS NAME PREVIOUSLY ENTERED IN LOGIN
 	
-	lotNum = lotteryNumber(userName);
+	lotNum = lotteryNumber(userName);	// LOTTERY NUMBER USED BY USER ENTERING NAME
 	
-	burpLot(userName, lotNum);
+	burpLot(userName, lotNum);			// THIS BURPS BACK THE REAL LOTTERY NUMBER AFTER USERS CHOICE MADE
 
-	johnnysQuirksIntro();			// JOHNNY, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
+	johnnysQuirksIntro();				// JOHNNY, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
 
-	danielsQuirksIntro();			// DANIEL, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
+	danielsQuirksIntro();				// DANIEL, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
 
-	mohamedsQuirksIntro();			// MOHAMED, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
+	mohamedsQuirksIntro();				// MOHAMED, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
 
-	jpsQuirksIntro();				// JP, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
+	jpsQuirksIntro();					// JP, START OF INTRO PLUS SELF QUIRK PLUS TWO OTHERS QUIRKS!
 
-	farewell();						// INDIVIDUAL LOGO'S FROM THE GROUP FOLLOWED BY FAREWELL MESSAGE
+	farewell();							// INDIVIDUAL LOGO'S FROM THE GROUP FOLLOWED BY FAREWELL MESSAGE
 
 	return 0;
 
@@ -619,8 +619,10 @@ void burpLot(string user_Name, int lot_Num)
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tGee Whiz, ";
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << user_Name;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " Your guess of ";
+	// USERS GUESS OF LOTTERY NUMBER ENTERED
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << lot_Num;
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << " is close,\n\n\t\tbut no cigar since the Actual Winner is ";
+	// REAL LOTTERY NUMBER GIVEN TO USER + 100
 	SetConsoleTextAttribute(consoleHANDLE, 11); cout << lot_Num + 100 << "...";
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\n\n\n\n\n\n\n";
 	system("pause");
