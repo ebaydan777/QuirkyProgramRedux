@@ -63,6 +63,7 @@
 ***		danielsLogo();													***
 ***		mohamedsLogo();													***
 ***		jpsLogo();														***
+***		login();														***
 ***		burpBack(string userName);										***
 ***		lotteryNumber(string userName);									***
 ***		burpLot(string userName, int lotNum);							***
@@ -206,20 +207,20 @@ void farewell();
 ///////////////////////////////////////////////////////////////////////////
 //				CONSTANTS DECLARATIONS AND DEFINITIONS					 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//																		 //
-const string       JOHNNYS_NAME = "JOHNNYs";							 //
-const string       DANIELS_NAME = "DANIELs";							 //
-const string       MOHAMEDS_NAME = "MOHAMEDs";							 //
-const string       JPS_NAME = "JPs";									 //
-const string	   ALLISONS_NAME = "ALLISONs";							 //
-const string	   SEANS_NAME = "SEANs";								 //
-const string	   ALEXS_NAME = "ALEXs";								 //
-const string	   GEORGES_NAME = "GEORGEs";							 //
-const string	   TODDS_NAME = "TODDs";								 //	
-const string	   ERICS_NAME = "ERICs";								 //
-//																		 //
-//																		 //
+/**/															       /**/
+/**/																   /**/
+/**/			const string       JOHNNYS_NAME = "JOHNNYs";		   /**/
+/**/			const string       DANIELS_NAME = "DANIELs";		   /**/
+/**/			const string       MOHAMEDS_NAME = "MOHAMEDs";		   /**/
+/**/			const string       JPS_NAME = "JPs";				   /**/
+/**/			const string	   ALLISONS_NAME = "ALLISONs";		   /**/
+/**/			const string	   SEANS_NAME = "SEANs";			   /**/
+/**/			const string	   ALEXS_NAME = "ALEXs";			   /**/
+/**/			const string	   GEORGES_NAME = "GEORGEs";		   /**/
+/**/			const string	   TODDS_NAME = "TODDs";			   /**/
+/**/			const string	   ERICS_NAME = "ERICs";			   /**/
+/**/																   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 
@@ -250,13 +251,13 @@ int main()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //
-	string userName;				//Login Name Defined				 //
-	int lotNum;						//Lottery Numbers Winning Number	 //
-//																		 //
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
+/**/	string userName;			//Login Name Defined		       /**/
+/**/	int lotNum;					//Lottery Numbers Winning Number   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 // MUSIC GOES HERE:
@@ -312,10 +313,10 @@ void welcome()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	// WELCOME MESSAGE HERE:
@@ -348,10 +349,10 @@ void hitEnter1()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 11);
@@ -375,11 +376,11 @@ void hitEnter2()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
- ///////////////////////////////////////////////////////////////////////////
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
+///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\t\t\t\t";
 	SetConsoleTextAttribute(consoleHANDLE, 75); cout << "\335\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\337\336";
@@ -407,10 +408,10 @@ void hitEnter3()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -438,10 +439,10 @@ void hitEnter4()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	//HIT ENTER
@@ -468,10 +469,10 @@ void hitEnter5()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 	
 	SetConsoleTextAttribute(consoleHANDLE, 11);						// Blue( +8) text
@@ -493,10 +494,10 @@ void johnnysLogo()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 14);  //Color: Intensity + Yellow
@@ -530,16 +531,31 @@ void johnnysLogo()
 	return;
 }
 
+
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			danielsLogo										 //
+//		DESCRIPTION:	Displays a logo created by Daniel of an  		 //
+//		airplane which relates to one of his quirks						 //
+//																		 //
+//		NOTE: Displays Logo of plane        							 //	
+//																		 //
+//		TIP: One of Daniels logos								     	 //
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 // DANIEL'S LOGO of an Aircraft with D and M initals on the tail													//#8
 void danielsLogo()
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 		SetConsoleTextAttribute(consoleHANDLE, 11);
@@ -630,6 +646,21 @@ void danielsLogo()
 	return;
 }
 
+
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			mohamedsLogo									 //
+//		DESCRIPTION:	Displays a logo created by Mohamed of an  		 //
+//		eyeball with tentacles which relates to one of his quirks	     //
+//																		 //
+//		NOTE: Displays Logo of an eyeball with tentacles				 //	
+//																		 //
+//		TIP: One of Mohameds logos								     	 //
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 // MOHAMEDs LOGO HERE																								//#9
 
 void mohamedsLogo()
@@ -637,10 +668,10 @@ void mohamedsLogo()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 4);
@@ -671,6 +702,20 @@ void mohamedsLogo()
 	return;
 }
 
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			jpsLogo											 //
+//		DESCRIPTION:	Displays a logo created by JP of waves as big    //
+//		as tsunamis which relates to one of his quirks.					 //
+//																		 //
+//		NOTE: Displays Logo of waves        							 //	
+//																		 //
+//		TIP: One of JPs logos									     	 //
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 // JPs LOGO HERE - Blue waves and black background with a black background.													//#10
 //void with no parameters
 void jpsLogo()
@@ -678,10 +723,10 @@ void jpsLogo()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	// Color of background and Logo.
@@ -717,18 +762,31 @@ void jpsLogo()
 
 // BEGINNING OF LOTTERY QUESTIONS SECTION: DONE BY MOHAMED
 
+
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			Login											 //
+//		DESCRIPTION:	Prompts user for their first name using a cin    //
+//		statement. Uses a string variable "name" to return info to.		 //
+//																		 //
+//		NOTE: Prompts user and returns info   							 //	
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 //non-void with no parameters login function
 string login()
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //		
-	string name;					//Name used for Lottery Question	 //
-//																		 //
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
+/**/	string name;				//Name used for Lottery Question   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	// WELCOME MESSAGE TO USER:
@@ -743,17 +801,28 @@ string login()
 	return name;
 }
 
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			burpBack										 //
+//		DESCRIPTION:	Literally burps back the information recieved    //
+//		from login() using parameters and cout functions.				 //
+//																		 //
+//		NOTE: Prompts user and returns info   							 //	
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 //void with call by value parameters
 void burpBack(string theUserName)
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //		
-//																		 //
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << ("\n\n\n\tLogging in at: \n\n");
@@ -783,18 +852,30 @@ void burpBack(string theUserName)
 	return;
 }
 
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			LotteryNumber									 //
+//		DESCRIPTION:	Prompts user for a lottery number using a cin    //
+//		statement. Uses a int variable "lotNumber" to return info.       //
+//																		 //
+//		NOTE: Prompts user and returns info   							 //	
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 //non-void with parameters, prompting of the lottery number
 int lotteryNumber(string userName2)
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //		
-	int lotNumber;					//Lottery Number Integer by User	 //
-//																		 //
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
+/**/	int lotNumber;				//Lottery Number Integer by User   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	//prompting of the lottery number
@@ -807,15 +888,28 @@ int lotteryNumber(string userName2)
 	cin.ignore();
 	return lotNumber;
 }
+
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			burpLot											 //
+//		DESCRIPTION:	Literally burps back the information recieved    //
+//		from lotteryNumber() using parameters and cout functions. 		 //
+//																		 //
+//		NOTE: Prompts user and returns info   							 //	
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
+
 void burpLot(string user_Name, int lot_Num)
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //		
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12); cout << "\n\n\t\tGee Whiz, ";
@@ -837,16 +931,27 @@ void burpLot(string user_Name, int lot_Num)
 //JOHNNY NGUYEN COMPLETED THE FOLLOWING SECTIONS : INTRO & THREE QUIRKS
 // BEGINNING OF JOHNNYS INTRO AND TWO QUIRKS PLUS HIS OWN:
 
+///////////////////////////////////////////////////////////////////////////
+//				   		 FUNCTION DEFINITIONS							 //
+///////////////////////////////////////////////////////////////////////////
+//																		 //
+//		NAME:			johnnysQuirksIntro								 //
+//		DESCRIPTION:	Introduces user to Johnny's quirks by using a    //
+//		friendly warnig to tell the user that Johnny's quirks are about  //
+//		to appear.														 //
+//		NOTE: Prompts user and returns info   							 //	
+//																		 //	
+///////////////////////////////////////////////////////////////////////////
 
 void johnnysQuirksIntro()
 {
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -895,10 +1000,10 @@ void johnnysQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 9);
@@ -928,10 +1033,10 @@ void allisonsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 9);
@@ -962,10 +1067,10 @@ void seansQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 9);
@@ -997,10 +1102,10 @@ void danielsQuirksIntro()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -1046,10 +1151,10 @@ void danielsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12);
@@ -1079,10 +1184,10 @@ void alexsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12);
@@ -1113,10 +1218,10 @@ void georgesQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12);
@@ -1150,10 +1255,10 @@ void mohamedsQuirksIntro()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\n\n\n\n\t\t\t   Here Comes ";
@@ -1175,10 +1280,10 @@ void mohamedsQuirk1()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 4);
@@ -1198,10 +1303,10 @@ void mohamedsQuirk2()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 3);
@@ -1220,10 +1325,10 @@ void mohamedsQuirk3()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 2);
@@ -1242,10 +1347,10 @@ void jpsQuirksIntro()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	cout << "\n\n\n\n\n\t\t\t\t";
@@ -1283,10 +1388,10 @@ void jpsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 	SetConsoleTextAttribute(consoleHANDLE, 12);
 	cout << "\n\n\n\t ";
@@ -1307,10 +1412,10 @@ void toddsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12);
@@ -1332,10 +1437,10 @@ void ericsQuirk()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
 ///////////////////////////////////////////////////////////////////////////
 
 	SetConsoleTextAttribute(consoleHANDLE, 12);
@@ -1358,12 +1463,12 @@ void farewell()
 ///////////////////////////////////////////////////////////////////////////
 //				   	  LOCAL VARIABLE DECLARATIONS						 //
 ///////////////////////////////////////////////////////////////////////////
-//																		 //
-//		Using HANDLE with predefined RGB colors							 //
-	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);				 //
-																		 //
-	string userName;													 //
-//																		 //	
+/**/																   /**/
+/**/		//Using HANDLE with predefined RGB colors				   /**/
+/**/	HANDLE consoleHANDLE = GetStdHandle(STD_OUTPUT_HANDLE);		   /**/
+/**/																   /**/
+/**/	string userName;											   /**/
+/**/																   /**/	
 ///////////////////////////////////////////////////////////////////////////
 
 	// FAREWELL LOGOS FROM ENTIRE GROUP ARE PLACED IN THIS FAREWELL FUNCTION:
